@@ -5,5 +5,6 @@ RUN apt-get update && apt-get install -y \
     openssh-client
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y neovim
+RUN DEBIAN_FRONTEND=noninteractive apt-get install -y nodejs
 
 WORKDIR /app
